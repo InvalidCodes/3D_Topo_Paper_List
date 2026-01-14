@@ -28,7 +28,7 @@ This repo curates papers, datasets, and environments for evaluating **3D / topol
   - **Focus**: Two-stage training (SFT + GRPO) for step-wise maze navigation on tokenized maze representations  
   - **Tags**: maze, navigation, LLM, SFT, GRPO
 
-- **AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents** — arXiv 2024. [[Paper]](https://arxiv.org/abs/2411.13072) [[PDF]](https://arxiv.org/pdf/2411.13072)  
+- **AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents** — arXiv 2024. [[Paper]](https://arxiv.org/abs/2411.13072) 
   - **Focus**: A controllable maze/sign generator for evaluating generalization under distribution shifts and deceptive cues  
   - **Tags**: benchmark, procedural generation, generalization, maze, RL
 
