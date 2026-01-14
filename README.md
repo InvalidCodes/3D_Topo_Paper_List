@@ -1,4 +1,4 @@
-# 3D Topo Benchmark — Related Papers (Awesome List)
+# 3D Topo Benchmark — Related Papers
 
 This repo curates papers, datasets, and environments for evaluating **3D / topological structure reasoning** in **VLM/VLA/agents**, organized into four task families:
 - **Connectivity** (reachability, maze, graph connectivity)
