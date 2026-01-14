@@ -1,0 +1,27 @@
+- key: chen2025knotgym
+  title: "Knot So Simple: A Minimalistic Environment for Spatial Reasoning"
+  year: 2025
+  venue: "arXiv"
+  domain: ["Entanglement"]
+  objects: ["rope"]
+  observations: ["image"]
+  links:
+    paper: "https://arxiv.org/abs/2505.18028"
+    pdf: ""
+    code: ""
+    project: ""
+  tags: ["benchmark", "interactive", "rope-manipulation", "spatial-reasoning"]
+
+- key: godin_dubois2024amaze
+  title: "AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents"
+  year: 2024
+  venue: "arXiv"
+  domain: ["Connectivity"]
+  objects: ["maze", "agent"]
+  observations: ["vision"]
+  links:
+    pdf: "https://arxiv.org/pdf/2411.13072"
+    paper: "https://arxiv.org/abs/2411.13072"
+    code: ""
+    project: ""
+  tags: ["benchmark", "procedural-generation", "generalization", "maze", "RL"]
