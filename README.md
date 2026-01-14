@@ -46,7 +46,8 @@ This repo curates papers, datasets, and environments for evaluating **3D / topol
 ---
 
 ## Datasets / Environments
-- _TODO_
+- **three.js** — WebGL-based 3D library used for rendering/visualization (and often lightweight simulation tooling in the browser). [[Website]](https://threejs.org)
+- **10K Knots (Kaggle)** — Knot-related dataset (Entanglement). [[Kaggle]](https://www.kaggle.com/datasets/josephcameron/10knots)
 
 ---
 
