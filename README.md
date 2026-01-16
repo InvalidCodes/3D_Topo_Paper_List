@@ -69,8 +69,7 @@ Used to isolate reasoning/planning from visual perception.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models](https://arxiv.org/abs/2507.20395) | Coordinate maze navigation via function calling; no visual input. | 2025-07 | — |
-| [AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO](https://arxiv.org/abs/2502.14669) | SFT+GRPO training for step-wise maze navigation. | 2025-02 | — |
+| [AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO](https://arxiv.org/abs/2502.14669) | ![aplha-maze](imgs/alpha_maze.png) | 2025-02 | — |
 
 ### Tools
 
