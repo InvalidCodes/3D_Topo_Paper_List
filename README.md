@@ -86,3 +86,4 @@ Used to isolate reasoning/planning from visual perception.
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [three.js](https://threejs.org) | ![WebGL 3D library often used for rendering/visualization.](imgs/three_js.png) | — | [Github](https://github.com/mrdoob/three.js/) |
+| [IEEE Xplore (Document 10610090)](https://ieeexplore.ieee.org/document/10610090) | ![Robot planning pipeline combining LLM planning with VLM concept querying.](imgs/robo_manipulation_vlm.png) | — | — |
