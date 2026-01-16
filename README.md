@@ -11,6 +11,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
   - [Enclosure & Separation](#enclosure--separation)
   - [Holes](#holes)
   - [Entanglement](#entanglement)
+  - [Geometric & Topological Concept Diagnostics](#geometric--topological-concept-diagnostics)
 - [Findings & Applications](#findings--applications)
 - [Appendix](#appendix)
   - [Text-only / Symbolic Baselines (LLM)](#text-only--symbolic-baselines-llm)
@@ -20,7 +21,9 @@ Contributions are very welcome — please feel free to open an issue or submit a
 
 ## Methods
 
-TBD.
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+
 
 ---
 
@@ -33,6 +36,7 @@ All tables are sorted by **time (newest first)**.
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![Procedural maze generator to study generalization under deceptive cues.](imgs/amaze.png) | 2024-11 | — |
+| [Topological Planning with Transformers for Vision-and-Language Navigation (CVPR 2021)](https://arxiv.org/abs/2012.05292) | ![Predicts interpretable navigation plans on topological maps from language instructions.](imgs/topo_plannning_vln.png) | 2021 | — |
 
 ### Enclosure & Separation
 
@@ -52,6 +56,12 @@ All tables are sorted by **time (newest first)**.
 |---|---|---:|:---:|
 | [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | [Github](https://github.com/lil-lab/knotgym) |
 | [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | ![10k-knots](imgs/10k_knot.png) | 2018 | — |
+
+### Geometric & Topological Concept Diagnostics
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [Computer Vision Models Show Human-Like Sensitivity to Geometric and Topological Concepts](https://arxiv.org/abs/2505.13281) | ![Odd-one-out diagnostic for geometric and topological concepts.](imgs/topo_concept.png) | 2025-05 | — |
 
 ---
 
@@ -75,4 +85,4 @@ Used to isolate reasoning/planning from visual perception.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [three.js](https://threejs.org) | [WebGL 3D library often used for rendering/visualization.](imgs/three_js.png) | — | [Github](https://github.com/mrdoob/three.js/) |
+| [three.js](https://threejs.org) | ![WebGL 3D library often used for rendering/visualization.](imgs/three_js.png) | — | [Github](https://github.com/mrdoob/three.js/) |
