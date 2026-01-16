@@ -1,59 +1,79 @@
-# 3D Topo Benchmark — Related Papers
+# Awesome 3D Topo Benchmark (Related Papers)
 
-This repo curates papers, datasets, and environments for evaluating **3D / topological structure reasoning** in **VLM/VLA/agents**, organized into four task families:
-- **Connectivity** (reachability, maze, graph connectivity)
-- **Enclosure & Separation** (containment, inside/outside, separability)
-- **Holes** (holes, tunnels, layered-structure reasoning)
-- **Entanglement** (rope/knot/link topology, crossings, closed loop vs open rope)
+This repo curates papers, datasets, and benchmarks for evaluating **3D / topological structure reasoning** in **vision-language(-action) models and embodied agents**.  
+We focus on topology-flavored capabilities such as connectivity, enclosure/separation, holes, and entanglement.  
+Contributions are very welcome — please feel free to open an issue or submit a PR.
 
 ## Table of Contents
-- [Paper List](#paper-list)
+- [Methods](#methods)
+- [Datasets & Benchmarks](#datasets--benchmarks)
   - [Connectivity](#connectivity)
   - [Enclosure & Separation](#enclosure--separation)
   - [Holes](#holes)
   - [Entanglement](#entanglement)
-- [Datasets / Environments](#datasets--environments)
-- [How to Add a Paper](#how-to-add-a-paper)
+- [Findings & Applications](#findings--applications)
+- [Appendix](#appendix)
+  - [Text-only / Symbolic Baselines (LLM)](#text-only--symbolic-baselines-llm)
+  - [Tools](#tools)
 
 ---
 
-## Paper List
+## Methods
+
+TBD.
+
+---
+
+## Datasets & Benchmarks
+
+All tables are sorted by **time (newest first)**.
 
 ### Connectivity
-- **MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2507.20395)  
-  - **Focus**: Coordinate-based maze navigation via function calling to isolate spatial reasoning without visual input  
-  - **Tags**: benchmark, maze, navigation, LLM, function-calling
 
-- **AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2502.14669)  
-  - **Focus**: Two-stage training (SFT + GRPO) for step-wise maze navigation on tokenized maze representations  
-  - **Tags**: maze, navigation, LLM, SFT, GRPO
-
-- **AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents** — arXiv 2024. [[Paper]](https://arxiv.org/abs/2411.13072) 
-  - **Focus**: A controllable maze/sign generator for evaluating generalization under distribution shifts and deceptive cues  
-  - **Tags**: benchmark, procedural generation, generalization, maze, RL
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | Procedural maze generator to study generalization under deceptive cues. | 2024-11 | — |
 
 ### Enclosure & Separation
-- _TODO_
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| TBD | TBD | — | — |
 
 ### Holes
-- _TODO_
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| TBD | TBD | — | — |
 
 ### Entanglement
-- **Knot So Simple: A Minimalistic Environment for Spatial Reasoning** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2505.18028)  
-  - **Focus**: KnotGym; goal-conditioned rope manipulation from image observations with complexity scaled by the number of crossings  
-  - **Tags**: benchmark, rope manipulation, spatial reasoning, generalization
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | — |
+| [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | Knot dataset for entanglement-related recognition tasks. | — | — |
 
 ---
 
-## Datasets / Environments
-- **three.js** — WebGL-based 3D library used for rendering/visualization (and often lightweight simulation tooling in the browser). [[Website]](https://threejs.org)
-- **10K Knots (Kaggle)** — Knot-related dataset (Entanglement). [[Kaggle]](https://www.kaggle.com/datasets/josephcameron/10knots)
+## Findings & Applications
+
+TBD.
 
 ---
 
-## How to Add a Paper
-PRs are welcome. Please update both:
-1) `bibliography/references.bib` (BibTeX)
-2) `bibliography/papers.yaml` (structured metadata)
+## Appendix
 
-See `CONTRIBUTING.md` for the exact format.
+### Text-only / Symbolic Baselines (LLM)
+
+Used to isolate reasoning/planning from visual perception.
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models](https://arxiv.org/abs/2507.20395) | Coordinate maze navigation via function calling; no visual input. | 2025-07 | — |
+| [AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO](https://arxiv.org/abs/2502.14669) | SFT+GRPO training for step-wise maze navigation. | 2025-02 | — |
+
+### Tools
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [three.js](https://threejs.org) | WebGL 3D library often used for rendering/visualization. | — | — |
