@@ -32,7 +32,7 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![AMaze](imgs/amaze.png) | 2024-11 | — |
+| [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![Procedural maze generator to study generalization under deceptive cues.](imgs/amaze.png) | 2024-11 | — |
 
 ### Enclosure & Separation
 
@@ -50,8 +50,8 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | — |
-| [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | ![10k-knots](imgs/10knot.png) | — | — |
+| [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | [Github](https://github.com/lil-lab/knotgym) |
+| [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | ![10k-knots](imgs/10k_knot.png) | 2018 | — |
 
 ---
 
@@ -75,4 +75,4 @@ Used to isolate reasoning/planning from visual perception.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [three.js](https://threejs.org) | WebGL 3D library often used for rendering/visualization. | — | — |
+| [three.js](https://threejs.org) | [WebGL 3D library often used for rendering/visualization.](imgs/three_js.png) | — | [Github](https://github.com/mrdoob/three.js/) |
