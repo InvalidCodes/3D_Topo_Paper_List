@@ -55,12 +55,15 @@ All tables are sorted by **time (newest first)**.
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | [Github](https://github.com/lil-lab/knotgym) |
+| [Untangling Dense Knots by Learning Task-Relevant Keypoints](https://arxiv.org/abs/2011.04999) | ![Learned keypoints guide a geometric planner to untangle dense knots.](imgs/untangle_keypoint.png) | 2020-11 | — |
+| [Learning to Manipulate Deformable Objects without Demonstrations](https://arxiv.org/abs/1910.13439) | ![Deformable object manipulation for rope and cloth tasks.](imgs/manipulate_deformable.png) | 2019-10 | — |
 | [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | ![10k-knots](imgs/10k_knot.png) | 2018 | — |
 
 ### Geometric & Topological Concept Diagnostics
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| [Generalizing Shape-from-Template to Topological Changes (STAG 2025)](https://arxiv.org/abs/2511.03459) | ![Shape-from-template generalized to topological changes like cuts and tears.](imgs/topo_change.png) | 2025-11 | — |
 | [Computer Vision Models Show Human-Like Sensitivity to Geometric and Topological Concepts](https://arxiv.org/abs/2505.13281) | ![Odd-one-out diagnostic for geometric and topological concepts.](imgs/topo_concept.png) | 2025-05 | — |
 
 ---
