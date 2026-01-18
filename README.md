@@ -74,8 +74,11 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| [VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs](https://arxiv.org/html/2512.21194v1) | ![Image-only benchmark for perceptual and rule-based visual reasoning.](imgs/visres_vlm.png) | 2025-12 | — |
 | [Generalizing Shape-from-Template to Topological Changes (STAG 2025)](https://arxiv.org/abs/2511.03459) | ![Shape-from-template generalized to topological changes like cuts and tears.](imgs/topo_change.png) | 2025-11 | — |
+| [OPTiCAL: An Abstract Positional Reasoning Benchmark for Vision Language Models](https://ufdatastudio.com/papers/driggers-ellis2025optical.pdf) | ![Abstract positional reasoning with shapes.](imgs/optical_vlm.png) | 2025 | [Github](https://github.com/ufdatastudio/optical?tab=readme-ov-file) |
 | [Computer Vision Models Show Human-Like Sensitivity to Geometric and Topological Concepts](https://arxiv.org/abs/2505.13281) | ![Odd-one-out diagnostic for geometric and topological concepts.](imgs/topo_concept.png) | 2025-05 | — |
+| [Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities? (ACL Findings 2025)](https://arxiv.org/abs/2502.08503) | ![Diagnosing “2D-cheating” in 3D LLM benchmark evaluation.](imgs/revisit_3d_llm.png) | 2025-02 | — |
 
 ---
 
