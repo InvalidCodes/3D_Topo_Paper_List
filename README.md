@@ -7,6 +7,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
 ## Table of Contents
 - [Methods](#methods)
 - [Datasets & Benchmarks](#datasets--benchmarks)
+  - [Topological / Spatial Taxonomy Benchmarks for VLMs](#Topological / Spatial Taxonomy Benchmarks for VLMs)
   - [Connectivity](#connectivity)
   - [Enclosure & Separation](#enclosure--separation)
   - [Holes](#holes)
@@ -31,6 +32,13 @@ Contributions are very welcome — please feel free to open an issue or submit a
 
 All tables are sorted by **time (newest first)**.
 
+### Topological / Spatial Taxonomy Benchmarks for VLMs
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
+| [SPATIAL-DISE: A Unified Benchmark for Evaluating Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.13394) | ![Unified diagnostic benchmark for spatial reasoning tasks.](imgs/spatial_dise_vlm.png) | 2025-10 | — |
+| [Mind the Gap: Benchmarking Spatial Reasoning in Vision-Language Models](https://arxiv.org/abs/2503.19707) | ![Benchmarking spatial reasoning in VLMs across synthetic and real images.](imgs/mind_gap_spatial_reasoning_vlm.png) | 2025-03 | [Github](https://github.com/stogiannidis/srbench) |
+
 ### Connectivity
 
 | Title | Introduction | Date | Code |
@@ -42,6 +50,7 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+
 | TBD | TBD | — | — |
 
 ### Holes
