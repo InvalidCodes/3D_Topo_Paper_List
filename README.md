@@ -7,7 +7,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
 ## Table of Contents
 - [Methods](#methods)
 - [Datasets & Benchmarks](#datasets--benchmarks)
-  - [Topological / Spatial Taxonomy Benchmarks for VLMs](#Topological / Spatial Taxonomy Benchmarks for VLMs)
+  - [Topological / Spatial Taxonomy Benchmarks for VLMs](#topological--spatial-taxonomy-benchmarks-for-vlms)
   - [Connectivity](#connectivity)
   - [Enclosure & Separation](#enclosure--separation)
   - [Holes](#holes)
@@ -36,7 +36,7 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [SPATIAL-DISE: A Unified Benchmark for Evaluating Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.13394) | ![Unified diagnostic benchmark for spatial reasoning tasks.](imgs/spatial_dise_vlm.png) | 2025-10 | — |
+| [SPATIAL-DISE: A Unified Benchmark for Evaluating Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.13394) | ![Unified diagnostic benchmark for spatial reasoning tasks.](imgs/spatial_dise_vlm.png) | 2025-10 | [Dataset](https://huggingface.co/datasets/TACPS-liv/Spatial-DISE) |
 | [Mind the Gap: Benchmarking Spatial Reasoning in Vision-Language Models](https://arxiv.org/abs/2503.19707) | ![Benchmarking spatial reasoning in VLMs across synthetic and real images.](imgs/mind_gap_spatial_reasoning_vlm.png) | 2025-03 | [Github](https://github.com/stogiannidis/srbench) |
 
 ### Connectivity
@@ -64,6 +64,7 @@ All tables are sorted by **time (newest first)**.
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [Knot So Simple: A Minimalistic Environment for Spatial Reasoning](https://arxiv.org/abs/2505.18028) | ![Knot So Simple](imgs/knot_so_simple.png) | 2025-05 | [Github](https://github.com/lil-lab/knotgym) |
+| [Untangling Dense Non-Planar Knots by Learning Manipulation Features and Recovery Policies](https://arxiv.org/abs/2107.08942) | ![Learned manipulation features and recovery policies for dense knot untangling.](imgs/untangle_manipulation.png) | 2021-07 | [Website](https://sites.google.com/berkeley.edu/non-planar-untangling) |
 | [Untangling Dense Knots by Learning Task-Relevant Keypoints](https://arxiv.org/abs/2011.04999) | ![Learned keypoints guide a geometric planner to untangle dense knots.](imgs/untangle_keypoint.png) | 2020-11 | — |
 | [Learning to Manipulate Deformable Objects without Demonstrations](https://arxiv.org/abs/1910.13439) | ![Deformable object manipulation for rope and cloth tasks.](imgs/manipulate_deformable.png) | 2019-10 | — |
 | [10K Knots (Kaggle)](https://www.kaggle.com/datasets/josephcameron/10knots) | ![10k-knots](imgs/10k_knot.png) | 2018 | — |
