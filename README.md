@@ -44,6 +44,7 @@ All tables are sorted by **time (newest first)**.
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [TDBench: Benchmarking Vision-Language Models in Understanding Top-Down Images](https://arxiv.org/abs/2504.03748) | ![Benchmarking VLMs on top-down imagery.](imgs/tdbench_vlm.png) | 2025-04 | — |
+| [Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces](https://arxiv.org/abs/2412.14171) | ![Video-based visual-spatial intelligence benchmark (VSI-Bench).](imgs/space_mllm.png) | 2024-12 | [Github](https://github.com/vision-x-nyu/thinking-in-space) |
 | [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![Procedural maze generator to study generalization under deceptive cues.](imgs/amaze.png) | 2024-11 | — |
 | [Topological Planning with Transformers for Vision-and-Language Navigation (CVPR 2021)](https://arxiv.org/abs/2012.05292) | ![Predicts interpretable navigation plans on topological maps from language instructions.](imgs/topo_plannning_vln.png) | 2021 | — |
 
@@ -78,7 +79,7 @@ All tables are sorted by **time (newest first)**.
 | [Generalizing Shape-from-Template to Topological Changes (STAG 2025)](https://arxiv.org/abs/2511.03459) | ![Shape-from-template generalized to topological changes like cuts and tears.](imgs/topo_change.png) | 2025-11 | — |
 | [OPTiCAL: An Abstract Positional Reasoning Benchmark for Vision Language Models](https://ufdatastudio.com/papers/driggers-ellis2025optical.pdf) | ![Abstract positional reasoning with shapes.](imgs/optical_vlm.png) | 2025 | [Github](https://github.com/ufdatastudio/optical?tab=readme-ov-file) |
 | [Computer Vision Models Show Human-Like Sensitivity to Geometric and Topological Concepts](https://arxiv.org/abs/2505.13281) | ![Odd-one-out diagnostic for geometric and topological concepts.](imgs/topo_concept.png) | 2025-05 | — |
-| [Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities? (ACL Findings 2025)](https://arxiv.org/abs/2502.08503) | ![Diagnosing “2D-cheating” in 3D LLM benchmark evaluation.](imgs/revisit_3d_llm.png) | 2025-02 | — |
+| [ScanQA: 3D Question Answering for Spatial Scene Understanding](https://arxiv.org/abs/2112.10482) | ![3D question answering with object-grounded answers and 3D bounding boxes.](imgs/scan3d_vlm.png) | 2021-12 | [Github](https://github.com/ATR-DBI/ScanQA) |
 
 ---
 
@@ -96,7 +97,9 @@ Used to isolate reasoning/planning from visual perception.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| [Open3D-VQA: A Benchmark for Comprehensive Spatial Reasoning with Multimodal Large Language Model in Open Space](https://arxiv.org/abs/2503.11094) | ![Open3D-VQA: aerial/open-space spatial reasoning benchmark.](imgs/open3d_mllm.png) | 2025-03 | [Github](https://github.com/EmbodiedCity/Open3D-VQA.code) |
 | [AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO](https://arxiv.org/abs/2502.14669) | ![aplha-maze](imgs/alpha_maze.png) | 2025-02 | — |
+| [Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities? (ACL Findings 2025)](https://arxiv.org/abs/2502.08503) | ![Diagnosing “2D-cheating” in 3D LLM benchmark evaluation.](imgs/revisit_3d_llm.png) | 2025-02 | — |
 
 ### Tools
 
