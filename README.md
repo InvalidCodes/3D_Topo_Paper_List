@@ -43,6 +43,7 @@ All tables are sorted by **time (newest first)**.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| [TDBench: Benchmarking Vision-Language Models in Understanding Top-Down Images](https://arxiv.org/abs/2504.03748) | ![Benchmarking VLMs on top-down imagery.](imgs/tdbench_vlm.png) | 2025-04 | — |
 | [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![Procedural maze generator to study generalization under deceptive cues.](imgs/amaze.png) | 2024-11 | — |
 | [Topological Planning with Transformers for Vision-and-Language Navigation (CVPR 2021)](https://arxiv.org/abs/2012.05292) | ![Predicts interpretable navigation plans on topological maps from language instructions.](imgs/topo_plannning_vln.png) | 2021 | — |
 
