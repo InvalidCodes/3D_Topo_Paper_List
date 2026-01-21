@@ -24,6 +24,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| [The Child's Conception of Space](https://api.pageplace.de/preview/DT0400.9781136220722_A23815605/preview-9781136220722_A23815605.pdf) | Foundational cognitive-development account of topological, projective, and Euclidean spatial concepts. | 1948 | — |
 
 
 ---

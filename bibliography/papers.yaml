@@ -26,20 +26,6 @@
     project: ""
   tags: ["benchmark", "procedural-generation", "generalization", "maze", "RL"]
 
-- key: einarsson2025mazeevalu
-  title: "MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models"
-  year: 2025
-  venue: "arXiv"
-  domain: ["Connectivity"]
-  objects: ["maze", "agent"]
-  observations: ["coordinates"]
-  links:
-    paper: "https://arxiv.org/abs/2507.20395"
-    pdf: ""
-    code: ""
-    project: ""
-  tags: ["benchmark", "maze", "navigation", "LLM", "function-calling"]
-
 - key: dao2025alphamaze
   title: "AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO"
   year: 2025
