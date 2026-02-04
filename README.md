@@ -25,6 +25,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | Gärdenfors, P. *Conceptual Spaces: The Geometry of Thought* (MIT Press), Ch. 3 “Topological and Geometric Properties” | Defines connectedness for regions; argues natural properties are connected; introduces convexity criterion for concepts. | 2000 | — |
+| [Understanding Topological Relationships through Comparisons of Similar Knots](http://www.carolstrohecker.info/PapersByYear/1996/UnderstandTopological.pdf) | Learning topology via comparing similar knots (neighborhood, continuity, boundary). | 1996 | — |
 | [The Child's Conception of Space](https://api.pageplace.de/preview/DT0400.9781136220722_A23815605/preview-9781136220722_A23815605.pdf) | Foundational cognitive-development account of topological, projective, and Euclidean spatial concepts. | 1948 | — |
 
 
