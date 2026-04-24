@@ -6,6 +6,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
 
 ## Table of Contents
 - [Methods](#methods)
+- [Others](#others)
 - [Datasets & Benchmarks](#datasets--benchmarks)
   - [Topological / Spatial Taxonomy Benchmarks for VLMs](#topological--spatial-taxonomy-benchmarks-for-vlms)
   - [Connectivity](#connectivity)
@@ -24,10 +25,22 @@ Contributions are very welcome — please feel free to open an issue or submit a
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
+| Piaget & Inhelder, [*The Child's Conception of Space*](https://api.pageplace.de/preview/DT0400.9781136220722_A23815605/preview-9781136220722_A23815605.pdf) | Foundational cognitive-development account of topological, projective, and Euclidean spatial concepts, including enclosure and surrounding. | 1948, 1956 | — |
+| Beth & Piaget, [*Mathematical Epistemology and Psychology*](https://books.google.com/books/about/Mathematical_Epistemology_and_Psychology.html?id=3C540QEACAAJ) | Epistemological account of mathematical structures and the psychology of logico-mathematical thought. | 1966 | — |
+| Papert, [*Mindstorms: Children, Computers, and Powerful Ideas*](https://www.media.mit.edu/publications/mindstorms/) | Constructionist account of children building mathematical ideas through computational objects-to-think-with. | 1980 | — |
+| Strohecker, [*Why Knot?*](https://www.carolstrohecker.info/PapersByYear/1991/WhyKnotDiss.pdf) | Doctoral dissertation on learning topology through knot-tying and media-rich construction environments. | 1991 | — |
+| Martin, [An Analysis of Some of Piaget's Topological Tasks from a Mathematical Point of View](https://www.jstor.org/stable/748762) | Compares Piaget's spatial-concept tasks with mathematical/topological concepts and highlights terminology mismatches. | 1976 | — |
+| Hatcher, [*Algebraic Topology*](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) | Standard algebraic topology reference for homology, holes, enclosure by spheres, and formal separation results such as the Jordan Curve Theorem. | 2002 | — |
+
+
+---
+
+## Others
+
+| Title | Introduction | Date | Code |
+|---|---|---:|:---:|
 | Gärdenfors, P. *Conceptual Spaces: The Geometry of Thought* (MIT Press), Ch. 3 “Topological and Geometric Properties” | Defines connectedness for regions; argues natural properties are connected; introduces convexity criterion for concepts. | 2000 | — |
 | [Understanding Topological Relationships through Comparisons of Similar Knots](http://www.carolstrohecker.info/PapersByYear/1996/UnderstandTopological.pdf) | Learning topology via comparing similar knots (neighborhood, continuity, boundary). | 1996 | — |
-| [The Child's Conception of Space](https://api.pageplace.de/preview/DT0400.9781136220722_A23815605/preview-9781136220722_A23815605.pdf) | Foundational cognitive-development account of topological, projective, and Euclidean spatial concepts. | 1948 | — |
-
 
 ---
 

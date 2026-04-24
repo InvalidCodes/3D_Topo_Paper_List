@@ -39,3 +39,87 @@
     code: ""
     project: ""
   tags: ["maze", "navigation", "LLM", "SFT", "GRPO"]
+
+- key: piaget_inhelder1956child_space
+  title: "The Child's Conception of Space"
+  year: 1956
+  venue: "Routledge & Kegan Paul"
+  domain: ["Methods"]
+  objects: ["spatial concepts", "topological concepts"]
+  observations: ["text"]
+  links:
+    paper: "https://openlibrary.org/works/OL43139305W/The_Child%27s_Conception_of_Space"
+    pdf: "https://api.pageplace.de/preview/DT0400.9781136220722_A23815605/preview-9781136220722_A23815605.pdf"
+    code: ""
+    project: ""
+  tags: ["cognitive-development", "topology", "enclosure", "spatial-reasoning"]
+
+- key: beth_piaget1966mathematical_epistemology
+  title: "Mathematical Epistemology and Psychology"
+  year: 1966
+  venue: "D. Reidel"
+  domain: ["Methods"]
+  objects: ["mathematical structures", "logico-mathematical thought"]
+  observations: ["text"]
+  links:
+    paper: "https://books.google.com/books/about/Mathematical_Epistemology_and_Psychology.html?id=3C540QEACAAJ"
+    pdf: ""
+    code: ""
+    project: ""
+  tags: ["epistemology", "psychology", "mathematics", "cognitive-development"]
+
+- key: papert1980mindstorms
+  title: "Mindstorms: Children, Computers, and Powerful Ideas"
+  year: 1980
+  venue: "Basic Books"
+  domain: ["Methods"]
+  objects: ["computational objects", "mathematical ideas"]
+  observations: ["text"]
+  links:
+    paper: "https://www.media.mit.edu/publications/mindstorms/"
+    pdf: "https://dam-prod.media.mit.edu/x/2025/01/27/Mindstorms.pdf"
+    code: ""
+    project: ""
+  tags: ["constructionism", "learning", "mathematics-education", "spatial-reasoning"]
+
+- key: strohecker1991whyknot
+  title: "Why Knot?"
+  year: 1991
+  venue: "Doctoral dissertation, Massachusetts Institute of Technology"
+  domain: ["Methods"]
+  objects: ["knots", "string", "topological concepts"]
+  observations: ["text", "media-rich learning environment"]
+  links:
+    paper: "https://www.carolstrohecker.info/papers.html#WhyKnotDiss"
+    pdf: "https://www.carolstrohecker.info/PapersByYear/1991/WhyKnotDiss.pdf"
+    code: ""
+    project: "http://whyknot.carolstrohecker.info/"
+  tags: ["knots", "topology-learning", "constructionism", "cognitive-development"]
+
+- key: martin1976piaget_topological_tasks
+  title: "An Analysis of Some of Piaget's Topological Tasks from a Mathematical Point of View"
+  year: 1976
+  venue: "Journal for Research in Mathematics Education"
+  domain: ["Methods"]
+  objects: ["Piagetian tasks", "topological concepts"]
+  observations: ["text"]
+  links:
+    paper: "https://eric.ed.gov/?id=EJ133522"
+    pdf: ""
+    code: ""
+    project: ""
+  tags: ["topology", "mathematics-education", "cognitive-development", "spatial-reasoning"]
+
+- key: hatcher2002algebraic_topology
+  title: "Algebraic Topology"
+  year: 2002
+  venue: "Cambridge University Press"
+  domain: ["Methods"]
+  objects: ["topological spaces", "holes", "cycles"]
+  observations: ["text"]
+  links:
+    paper: "https://pi.math.cornell.edu/~hatcher/AT/ATpage"
+    pdf: "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf"
+    code: ""
+    project: ""
+  tags: ["algebraic-topology", "homology", "holes", "separation"]

@@ -1,60 +1,79 @@
-# 3D Topo Benchmark — Related Papers
+# 3D TopoBench — Paper Investigation Scope
 
-This repo curates papers, datasets, and environments for evaluating **3D / topological structure reasoning** in **VLM/VLA/agents**, organized into four task families:
-
-- **Connectivity** (reachability, maze, graph connectivity)
-- **Enclosure & Separation** (containment, inside/outside, separability)
-- **Holes** (holes, tunnels, layered-structure reasoning)
-- **Entanglement** (rope/knot/link topology, crossings, closed loop vs open rope)
-
-## Table of Contents
-- [Paper List](#paper-list)
-  - [Connectivity](#connectivity)
-  - [Enclosure & Separation](#enclosure--separation)
-  - [Holes](#holes)
-  - [Entanglement](#entanglement)
-- [Datasets / Environments](#datasets--environments)
-- [How to Add a Paper](#how-to-add-a-paper)
+Internal reference for the project team and Codex context windows.
+For the public paper list, see [`README.md`](../README.md).
 
 ---
 
-## Paper List
+## Purpose
 
-### Connectivity
-- **MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2507.20395)  
-  - **Focus**: Coordinate-based maze navigation via function calling to isolate spatial reasoning without visual input  
-  - **Tags**: benchmark, maze, navigation, LLM, function-calling
-
-- **AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2502.14669)  
-  - **Focus**: Two-stage training (SFT + GRPO) for step-wise maze navigation on tokenized maze representations  
-  - **Tags**: maze, navigation, LLM, SFT, GRPO
-
-- **AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents** — arXiv 2024. [[Paper]](https://arxiv.org/abs/2411.13072) 
-  - **Focus**: A controllable maze/sign generator for evaluating generalization under distribution shifts and deceptive cues  
-  - **Tags**: benchmark, procedural generation, generalization, maze, RL
-
-### Enclosure & Separation
-- _TODO_
-
-### Holes
-- _TODO_
-
-### Entanglement
-- **Knot So Simple: A Minimalistic Environment for Spatial Reasoning** — arXiv 2025. [[Paper]](https://arxiv.org/abs/2505.18028)  
-  - **Focus**: KnotGym; goal-conditioned rope manipulation from image observations with complexity scaled by the number of crossings  
-  - **Tags**: benchmark, rope manipulation, spatial reasoning, generalization
+This repo collects related papers for **3D TopoBench**, a benchmark for evaluating 3D topological reasoning in MLLMs and embodied agents.
+We focus on *qualitative structural understanding* (connected? inside? knotted?) rather than metric geometry (how far? how big?).
 
 ---
 
-## Datasets / Environments
-- **three.js** — WebGL-based 3D library used for rendering/visualization (and often lightweight simulation tooling in the browser). [[Website]](https://threejs.org)
-- **10K Knots (Kaggle)** — Knot-related dataset (Entanglement). [[Kaggle]](https://www.kaggle.com/datasets/josephcameron/10knots)
+## Investigation Directions
+
+### 1. Cognitive Literature
+
+Foundational theories of how humans perceive and reason about topology.
+
+- **Chen Lin (1982) "Topology-First"** — the human visual system perceives topological properties (connectivity, holes, inside/outside) *before* local geometric ones (shape, size, orientation).
+- **Spelke's Object Principles** — infants understand the physical world via *Solidity* (no self-intersection) and *Spatiotemporal Continuity* (no tearing), which map directly onto topological invariants.
+- Piaget & Inhelder (1948/1956) — developmental account of topological, projective, and Euclidean spatial concepts in children.
+- Gärdenfors (2000) *Conceptual Spaces* — connectedness of regions; convexity criterion for natural concepts.
+
+#### Papers Supporting Taxonomy
+
+These papers ground the benchmark's task categories (proximity, continuity, connection, separation, order, enclosure) in cognitive and mathematical literature.
+
+Taxonomy structure (Piaget lineage):
+
+- **Piaget & Inhelder (1948, 1956), Beth & Piaget (1966), Papert (1980)** — describe the epistemological structures of topology (proximity, continuity, connection, separation), order (seriation), and classification, which together contribute to the emergence of mathematical thinking.
+- **C. Strohecker, "Why Knot?" (1991)** — shows how these deep structures (proximity, continuity, connection, separation, order) enter into thinking about knots; formulates a way of characterizing differences in terms of an implicit preference for one or another of the structures.
+- **J. Larry Martin, "An Analysis of Some of Piaget's Topological Tasks from a Mathematical Point of View" (1976)** — notions of proximity and separation complement one another in their development; awareness of separation allows the child to take into account different degrees of proximity.
+
+#### Papers Supporting Holes in Enclosure
+
+These papers justify treating *holes* as a subtype of *enclosure* and define the relationship formally.
+
+- **Piaget & Inhelder (1956) *The Child's Conception of Space*, Ch.1 §4** — "In three dimensions enclosure takes the form of the relation of 'insideness', as in the case of an object in a closed box." (Enclosure = inside/outside perception ability.)
+- **Hatcher (2002) *Algebraic Topology*, Ch.2 p.100** — "This spherical cycle detects the presence of a 'hole' in X₃, the missing interior of the sphere. However, since this hole is enclosed by a sphere rather than a circle, it is of a different sort." (Standard algebraic topology textbook defines "hole" directly using "enclosed" and "missing interior".)
+- **Hatcher (2002), §2.B p.169 (Jordan Curve Theorem)** — "A subspace of S² homeomorphic to S¹ separates S² into two complementary components." (Mathematical formalization of enclosure: a closed boundary → interior + exterior.)
+
+### 2. Spatial Works (especially benchmarks)
+
+Benchmarks evaluating spatial reasoning in VLMs/MLLMs, with emphasis on structural/relational tasks.
+
+Key questions: Does the benchmark test viewpoint-invariant structure? Does it go beyond left/right/distance?
+
+### 3. Topology Works
+
+Papers that explicitly handle topological properties in vision, geometry processing, or robot perception.
+
+Key questions: Genus/Betti number estimation, knot/link detection, topological invariance under deformation, persistent homology applied to visual scenes.
+
+### 4. MLLMs and Video Generative Models
+
+How current multimodal models handle (or fail at) topological structure, and what video generation models reveal about 3D structural understanding.
+
+Key questions: Do MLLMs maintain topological consistency across views? Do video models respect solidity and continuity?
 
 ---
 
-## How to Add a Paper
-PRs are welcome. Please update both:
-1) `bibliography/references.bib` (BibTeX)
-2) `bibliography/papers.yaml` (structured metadata)
+## Task Scope (for paper relevance)
 
-See `CONTRIBUTING.md` for the exact format.
+| Ability | Static Perception | Intervention / Planning |
+| --- | --- | --- |
+| Continuity | Maze/Möbius, reachability A→B | Pipe connection env |
+| Separation | Shape/object separation detection | One-stroke color grouping |
+| Order | Origami (time order), beam string (spatial order) | Hanoi Tower |
+| Enclosure | Hole detection, 2D/3D enclosure | Laser game |
+| Knot | Closed loop vs. knot, chain count | Untangle env |
+
+---
+
+## Related Materials
+
+- [three.js docs](https://threejs.org/docs)
+- [three-csg-ts](https://github.com/samalexander/three-csg-ts) — CSG for three.js
