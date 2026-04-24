@@ -12,68 +12,117 @@ We focus on *qualitative structural understanding* (connected? inside? knotted?)
 
 ---
 
-## Investigation Directions
+## Classification Principle
 
-### 1. Cognitive Literature
+Use a three-level classification when adding or reviewing papers:
 
-Foundational theories of how humans perceive and reason about topology.
+1. **Role** — why the paper matters to this benchmark.
+2. **Ability** — which topological ability it supports or evaluates.
+3. **Evaluation mode** — whether it is static perception, temporal consistency, or intervention/planning.
 
-- **Chen Lin (1982) "Topology-First"** — the human visual system perceives topological properties (connectivity, holes, inside/outside) *before* local geometric ones (shape, size, orientation).
-- **Spelke's Object Principles** — infants understand the physical world via *Solidity* (no self-intersection) and *Spatiotemporal Continuity* (no tearing), which map directly onto topological invariants.
-- Piaget & Inhelder (1948/1956) — developmental account of topological, projective, and Euclidean spatial concepts in children.
-- Gärdenfors (2000) *Conceptual Spaces* — connectedness of regions; convexity criterion for natural concepts.
+This avoids mixing foundational theory papers with benchmark papers and implementation tools.
 
-#### Papers Supporting Taxonomy
-
-These papers ground the benchmark's task categories (proximity, continuity, connection, separation, order, enclosure) in cognitive and mathematical literature.
-
-Taxonomy structure (Piaget lineage):
-
-- **Piaget & Inhelder (1948, 1956), Beth & Piaget (1966), Papert (1980)** — describe the epistemological structures of topology (proximity, continuity, connection, separation), order (seriation), and classification, which together contribute to the emergence of mathematical thinking.
-- **C. Strohecker, "Why Knot?" (1991)** — shows how these deep structures (proximity, continuity, connection, separation, order) enter into thinking about knots; formulates a way of characterizing differences in terms of an implicit preference for one or another of the structures.
-- **J. Larry Martin, "An Analysis of Some of Piaget's Topological Tasks from a Mathematical Point of View" (1976)** — notions of proximity and separation complement one another in their development; awareness of separation allows the child to take into account different degrees of proximity.
-
-#### Papers Supporting Holes in Enclosure
-
-These papers justify treating *holes* as a subtype of *enclosure* and define the relationship formally.
-
-- **Piaget & Inhelder (1956) *The Child's Conception of Space*, Ch.1 §4** — "In three dimensions enclosure takes the form of the relation of 'insideness', as in the case of an object in a closed box." (Enclosure = inside/outside perception ability.)
-- **Hatcher (2002) *Algebraic Topology*, Ch.2 p.100** — "This spherical cycle detects the presence of a 'hole' in X₃, the missing interior of the sphere. However, since this hole is enclosed by a sphere rather than a circle, it is of a different sort." (Standard algebraic topology textbook defines "hole" directly using "enclosed" and "missing interior".)
-- **Hatcher (2002), §2.B p.169 (Jordan Curve Theorem)** — "A subspace of S² homeomorphic to S¹ separates S² into two complementary components." (Mathematical formalization of enclosure: a closed boundary → interior + exterior.)
-
-### 2. Spatial Works (especially benchmarks)
-
-Benchmarks evaluating spatial reasoning in VLMs/MLLMs, with emphasis on structural/relational tasks.
-
-Key questions: Does the benchmark test viewpoint-invariant structure? Does it go beyond left/right/distance?
-
-### 3. Topology Works
-
-Papers that explicitly handle topological properties in vision, geometry processing, or robot perception.
-
-Key questions: Genus/Betti number estimation, knot/link detection, topological invariance under deformation, persistent homology applied to visual scenes.
-
-### 4. MLLMs and Video Generative Models
-
-How current multimodal models handle (or fail at) topological structure, and what video generation models reveal about 3D structural understanding.
-
-Key questions: Do MLLMs maintain topological consistency across views? Do video models respect solidity and continuity?
-
----
-
-## Task Scope (for paper relevance)
-
-| Ability | Static Perception | Intervention / Planning |
+| Level | Options | Use for |
 | --- | --- | --- |
-| Continuity | Maze/Möbius, reachability A→B | Pipe connection env |
-| Separation | Shape/object separation detection | One-stroke color grouping |
-| Order | Origami (time order), beam string (spatial order) | Hanoi Tower |
-| Enclosure | Hole detection, 2D/3D enclosure | Laser game |
-| Knot | Closed loop vs. knot, chain count | Untangle env |
+| Role | Foundations / Methods, Benchmarks / Datasets, Model Diagnostics, Tools / Environments, Others | Deciding the top-level section |
+| Ability | Continuity, Separation, Order, Enclosure, Knot | Deciding the benchmark task family |
+| Evaluation mode | Static perception, Temporal consistency, Intervention / planning | Deciding the task format |
 
 ---
 
-## Related Materials
+## Paper Categories
 
-- [three.js docs](https://threejs.org/docs)
-- [three-csg-ts](https://github.com/samalexander/three-csg-ts) — CSG for three.js
+### 1. Foundations / Methods
+
+Papers that justify the benchmark taxonomy or define topological concepts used by tasks.
+
+#### Cognitive and Developmental Foundations
+
+- **Chen Lin (1982) "Topology-First"** — argues that the human visual system perceives topological properties such as connectivity, holes, and inside/outside before local geometric properties such as shape, size, and orientation.
+- **Spelke's Object Principles** — infants reason with solidity and spatiotemporal continuity; these map naturally to no self-intersection, no tearing, and object persistence under motion.
+- **Piaget & Inhelder (1948/1956), *The Child's Conception of Space*** — developmental account of topological, projective, and Euclidean spatial concepts, including proximity, separation, order, and enclosure.
+- **Beth & Piaget (1966), *Mathematical Epistemology and Psychology*** — epistemological framing for mathematical structures and logico-mathematical thought.
+- **Papert (1980), *Mindstorms*** — constructionist account of building mathematical ideas through computational objects-to-think-with.
+
+#### Topological Task Analysis
+
+- **J. Larry Martin (1976), "An Analysis of Some of Piaget's Topological Tasks from a Mathematical Point of View"** — compares Piagetian spatial tasks with mathematical topology and clarifies where cognitive and mathematical terms diverge.
+- **C. Strohecker (1991), "Why Knot?"** — studies how proximity, continuity, connection, separation, and order enter into children's thinking about knots.
+- **Gärdenfors (2000), *Conceptual Spaces*, Ch. 3** — defines connectedness for conceptual regions and motivates topology-like structure in concept representation.
+
+#### Mathematical Formalization
+
+- **Hatcher (2002), *Algebraic Topology*, Ch. 2** — formalizes cycles, holes, homology, and separation; useful for grounding hole and enclosure tasks.
+- **Hatcher (2002), §2.B, Jordan Curve Theorem** — formalizes enclosure as a closed boundary separating an interior from an exterior.
+
+### 2. Benchmarks / Datasets by Ability
+
+Papers, datasets, and environments that can directly inspire benchmark items or baselines.
+
+| Ability | Static Perception | Temporal Consistency | Intervention / Planning |
+| --- | --- | --- | --- |
+| Continuity | Maze reachability, Möbius continuity, connected components | Object/path continuity across views or frames | Pipe connection, route planning |
+| Separation | Shape/object separation, disjoint components | Maintaining separated objects under motion | One-stroke color grouping, partition actions |
+| Order | Origami state order, beam-string spatial order, stacking order | Recovering action/order sequence from video | Hanoi Tower, reordering tasks |
+| Enclosure | Inside/outside, closed boundary, hole detection, nested containers | Containment persistence under viewpoint or object motion | Laser game, containment manipulation |
+| Knot | Closed loop vs. open rope, knot/link detection, chain count | Knot state consistency across deformation | Rope untangling, link manipulation |
+
+Current collection targets:
+
+- **Connectivity / Continuity** — maze and graph-style reachability benchmarks, topological navigation, path planning.
+- **Enclosure / Holes** — inside/outside and missing-interior reasoning, including 2D boundaries and 3D shells.
+- **Knot / Entanglement** — rope, knot, link, and chain topology, especially tasks where geometry changes but topology should remain invariant.
+- **Geometric and Topological Diagnostics** — VLM tests that include topological invariants, visual odd-one-out tasks, or topological change detection.
+
+### 3. Model Diagnostics
+
+Papers that reveal strengths or failures of MLLMs, VLMs, VLA systems, and video generative models on topological structure.
+
+Key questions:
+
+- Do models preserve topology under viewpoint changes, deformation, or temporal evolution?
+- Do they distinguish metric geometry from qualitative structure?
+- Do video models respect solidity, continuity, enclosure, and non-self-intersection?
+- Can a model reason about an intervention that changes geometry without changing topology?
+
+### 4. Tools / Environments
+
+Implementation references used to build or render benchmark tasks.
+
+- [three.js docs](https://threejs.org/docs) — browser-based 3D rendering.
+- [three-csg-ts](https://github.com/samalexander/three-csg-ts) — CSG operations for constructing enclosure, holes, and Boolean geometry tasks.
+- Rope, cloth, and deformable-object simulators — useful for knot and entanglement interventions.
+
+### 5. Others
+
+Relevant papers that provide adjacent motivation but do not directly define the taxonomy, produce benchmark tasks, diagnose models, or support implementation.
+
+Examples:
+
+- General spatial reasoning papers without explicit topological structure.
+- Broad cognitive-science papers where topology is only a minor example.
+- Robotics or graphics papers that use 3D geometry but do not test topological invariants.
+
+---
+
+## Add-Paper Decision Rules
+
+When a new paper is added, assign one primary category and optional secondary tags.
+
+1. If it explains **why the taxonomy exists**, put it under **Foundations / Methods**.
+2. If it provides a **task, dataset, benchmark, or environment**, put it under **Benchmarks / Datasets by Ability**.
+3. If it analyzes **model behavior or failure modes**, put it under **Model Diagnostics**.
+4. If it is mostly useful for **building the benchmark**, put it under **Tools / Environments**.
+5. If it is relevant but weakly connected, put it under **Others**.
+
+For benchmark papers, always tag the ability family: `Continuity`, `Separation`, `Order`, `Enclosure`, or `Knot`.
+
+---
+
+## Investigation Questions
+
+- Does the paper test viewpoint-invariant or deformation-invariant structure?
+- Does it go beyond left/right/distance and evaluate qualitative relationships?
+- Does it contain tasks that can be rendered or simulated in 3D?
+- Does it isolate topological reasoning from language priors or metric shortcuts?
+- Does it provide a useful failure mode for current MLLMs, VLMs, VLA systems, or video models?
