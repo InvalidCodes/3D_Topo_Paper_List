@@ -1,3 +1,87 @@
+- key: zhang2026theoryofspace
+  title: "Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration?"
+  year: 2026
+  venue: "ICLR"
+  domain: ["Spatial Reasoning", "Embodied AI"]
+  objects: ["multi-room layouts", "embodied agents", "cognitive maps"]
+  observations: ["egocentric RGB", "symbolic observations", "action history"]
+  links:
+    paper: "https://arxiv.org/abs/2602.07055"
+    pdf: "https://arxiv.org/pdf/2602.07055"
+    code: "https://github.com/mll-lab-nu/Theory-of-Space"
+    project: "https://theory-of-space.github.io/"
+  tags: ["benchmark", "active-exploration", "partial-observability", "spatial-belief", "cognitive-map"]
+
+- key: wang2025enact
+  title: "ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction"
+  year: 2026
+  venue: "ICLR"
+  domain: ["Spatial Reasoning", "Embodied AI"]
+  objects: ["home-scale activities", "robot actions", "scene graph changes"]
+  observations: ["egocentric images", "action sequences"]
+  links:
+    paper: "https://arxiv.org/abs/2511.20937"
+    pdf: "https://arxiv.org/pdf/2511.20937"
+    code: "https://github.com/mll-lab-nu/ENACT"
+    project: "https://enact-embodied-cognition.github.io/"
+  tags: ["benchmark", "world-modeling", "egocentric-interaction", "sequence-reordering", "partial-observability"]
+
+- key: wang2025mindcube
+  title: "MindCube: Spatial Mental Modeling from Limited Views"
+  year: 2026
+  venue: "ICLR"
+  domain: ["Spatial Reasoning"]
+  objects: ["multi-view scenes", "objects", "cognitive maps"]
+  observations: ["images", "limited views"]
+  links:
+    paper: "https://arxiv.org/abs/2506.21458"
+    pdf: "https://arxiv.org/pdf/2506.21458"
+    code: "https://github.com/mll-lab-nu/MindCube"
+    project: "https://mind-cube.github.io/"
+  tags: ["benchmark", "spatial-mental-modeling", "perspective-taking", "mental-simulation", "cognitive-map"]
+
+- key: yang2025embodiedbench
+  title: "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents"
+  year: 2025
+  venue: "ICML"
+  domain: ["Spatial Reasoning", "Embodied AI"]
+  objects: ["embodied agents", "navigation tasks", "manipulation tasks"]
+  observations: ["vision", "language", "action history"]
+  links:
+    paper: "https://arxiv.org/abs/2502.09560"
+    pdf: "https://arxiv.org/pdf/2502.09560"
+    code: "https://github.com/EmbodiedBench/EmbodiedBench"
+    project: "https://embodiedbench.github.io/"
+  tags: ["benchmark", "spatial-awareness", "visual-perception", "long-horizon-planning", "embodied-agent"]
+
+- key: sun2024layoutvlm
+  title: "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
+  year: 2025
+  venue: "CVPR"
+  domain: ["Spatial Reasoning", "3D Layout"]
+  objects: ["rooms", "3D assets", "spatial relations"]
+  observations: ["visually marked images", "language instructions"]
+  links:
+    paper: "https://arxiv.org/abs/2412.02193"
+    pdf: "https://arxiv.org/pdf/2412.02193"
+    code: "https://github.com/sunfanyunn/LayoutVLM"
+    project: "https://ai.stanford.edu/~sunfanyun/layoutvlm/"
+  tags: ["3d-layout", "spatial-planning", "differentiable-optimization", "vision-language-model"]
+
+- key: li2024embodied_agent_interface
+  title: "Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making"
+  year: 2024
+  venue: "NeurIPS Datasets and Benchmarks"
+  domain: ["Embodied AI", "Planning"]
+  objects: ["embodied tasks", "states", "actions", "relations"]
+  observations: ["text", "environment representations"]
+  links:
+    paper: "https://arxiv.org/abs/2410.07166"
+    pdf: "https://arxiv.org/pdf/2410.07166"
+    code: "https://github.com/embodied-agent-interface/embodied-agent-interface"
+    project: "https://embodied-agent-interface.github.io/"
+  tags: ["benchmark", "ability-taxonomy", "goal-interpretation", "action-sequencing", "transition-modeling"]
+
 - key: chen2025knotgym
   title: "Knot So Simple: A Minimalistic Environment for Spatial Reasoning"
   year: 2025
