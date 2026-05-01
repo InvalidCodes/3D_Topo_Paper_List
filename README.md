@@ -103,7 +103,6 @@ Papers, datasets, and environments that can directly inspire benchmark items or 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [Enhancing Spatial Reasoning in Multimodal Large Language Models through Reasoning-based Segmentation (ICCV 2025)](https://openaccess.thecvf.com/content/ICCV2025/html/Ning_Enhancing_Spatial_Reasoning_in_Multimodal_Large_Language_Models_through_Reasoning-based_ICCV_2025_paper.html) | ![Enhancing Spatial Reasoning in Multimodal Large Language Models through Reasoning-based Segmentation (ICCV 2025)](imgs/enhancing_spatial_reasoning_in_multimodal_large_language_models_thro.png) | 2025-10 | — |
-| [Visual Spatial Reasoning](https://aclanthology.org/2023.tacl-1.37/) | ![Visual Spatial Reasoning](imgs/visual_spatial_reasoning.png) | 2023 | [Dataset](https://huggingface.co/datasets/cambridgeltl/vsr_random) |
 | [Rel3D: A Minimally Contrastive Benchmark for Grounding Spatial Relations in 3D (NeurIPS 2020)](https://proceedings.neurips.cc/paper/2020/file/76dc611d6ebaafc66cc0879c71b5db5c-Paper.pdf) | ![Rel3D: A Minimally Contrastive Benchmark for Grounding Spatial Relations in 3D (NeurIPS 2020)](imgs/rel3d_a_minimally_contrastive_benchmark_for_grounding_spatial_relati.png) | 2020 | [Github](https://github.com/princeton-vl/Rel3D) |
 
 ### Order
