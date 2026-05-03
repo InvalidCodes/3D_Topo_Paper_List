@@ -18,15 +18,15 @@ Use a three-level classification when adding or reviewing papers:
 
 1. **Role** — why the paper matters to this benchmark.
 2. **Ability** — which topological ability it supports or evaluates.
-3. **Evaluation mode** — whether it is static perception, temporal consistency, or intervention/planning.
+3. **Evaluation mode** — whether it is static perception or interactive planning.
 
 This avoids mixing foundational theory papers with benchmark papers and implementation tools.
 
 | Level | Options | Use for |
 | --- | --- | --- |
 | Role | Foundations / Methods, Benchmarks / Datasets, Model Diagnostics, Tools / Environments, Others | Deciding the top-level section |
-| Ability | Continuity, Separation, Order, Enclosure, Knot | Deciding the benchmark task family |
-| Evaluation mode | Static perception, Temporal consistency, Intervention / planning | Deciding the task format |
+| Ability | Continuity, Separation, Order, Enclosure, Knots | Deciding the benchmark task family |
+| Evaluation mode | Perception (static), Planning (interactive) | Deciding the task format |
 
 ---
 
@@ -59,19 +59,19 @@ Papers that justify the benchmark taxonomy or define topological concepts used b
 
 Papers, datasets, and environments that can directly inspire benchmark items or baselines.
 
-| Ability | Static Perception | Temporal Consistency | Intervention / Planning |
-| --- | --- | --- | --- |
-| Continuity | Maze reachability, Möbius continuity, connected components | Object/path continuity across views or frames | Pipe connection, route planning |
-| Separation | Shape/object separation, disjoint components | Maintaining separated objects under motion | One-stroke color grouping, partition actions |
-| Order | Origami state order, beam-string spatial order, stacking order | Recovering action/order sequence from video | Hanoi Tower, reordering tasks |
-| Enclosure | Inside/outside, closed boundary, hole detection, nested containers | Containment persistence under viewpoint or object motion | Laser game, containment manipulation |
-| Knot | Closed loop vs. open rope, knot/link detection, chain count | Knot state consistency across deformation | Rope untangling, link manipulation |
+| Category | Perception (static) | Planning (interactive) |
+| --- | --- | --- |
+| Continuity | 2D Maze (`continuity_2d_maze`), 3D Maze (`continuity_3d_maze`) | Pipe (`continuity_pipe`) |
+| Separation | IKEA (`separation_objects`) | One Stroke (`separation_one_stroke`) |
+| Order | Bead (`order_bead_string`), Origami Point (`order_origami`) | Swap (`order_swap_puzzle`) |
+| Enclosure | Sheep (`enclosure_sheep`), Hole (`enclosure_hole_detection`) | Chat noir (`enclosure_chat_noir`) |
+| Knots | Knots (`knots_static`) | Untangle (`knots_untangle`, easy / medium / hard) |
 
 Current collection targets:
 
-- **Connectivity / Continuity** — maze and graph-style reachability benchmarks, topological navigation, path planning.
+- **Continuity** — maze and graph-style reachability benchmarks, topological navigation, path planning.
 - **Enclosure / Holes** — inside/outside and missing-interior reasoning, including 2D boundaries and 3D shells.
-- **Knot / Entanglement** — rope, knot, link, and chain topology, especially tasks where geometry changes but topology should remain invariant.
+- **Knots** — rope, knot, link, and chain topology, especially tasks where geometry changes but topology should remain invariant.
 - **Geometric and Topological Diagnostics** — VLM tests that include topological invariants, visual odd-one-out tasks, or topological change detection.
 
 ### 3. Model Diagnostics
@@ -115,7 +115,7 @@ When a new paper is added, assign one primary category and optional secondary ta
 4. If it is mostly useful for **building the benchmark**, put it under **Tools / Environments**.
 5. If it is relevant but weakly connected, put it under **Others**.
 
-For benchmark papers, always tag the ability family: `Continuity`, `Separation`, `Order`, `Enclosure`, or `Knot`.
+For benchmark papers, always tag the ability family: `Continuity`, `Separation`, `Order`, `Enclosure`, or `Knots`.
 
 ---
 

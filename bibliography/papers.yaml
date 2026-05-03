@@ -24,7 +24,7 @@
     pdf: "https://arxiv.org/pdf/2511.20937"
     code: "https://github.com/mll-lab-nu/ENACT"
     project: "https://enact-embodied-cognition.github.io/"
-  tags: ["benchmark", "world-modeling", "egocentric-interaction", "sequence-reordering", "partial-observability"]
+  tags: ["benchmark", "world-modeling", "egocentric-interaction", "sequence-reordering", "partial-observability", "weakly-related"]
 
 - key: wang2025mindcube
   title: "MindCube: Spatial Mental Modeling from Limited Views"
@@ -52,7 +52,7 @@
     pdf: "https://arxiv.org/pdf/2502.09560"
     code: "https://github.com/EmbodiedBench/EmbodiedBench"
     project: "https://embodiedbench.github.io/"
-  tags: ["benchmark", "spatial-awareness", "visual-perception", "long-horizon-planning", "embodied-agent"]
+  tags: ["benchmark", "spatial-awareness", "visual-perception", "long-horizon-planning", "embodied-agent", "weakly-related"]
 
 - key: sun2024layoutvlm
   title: "LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models"
@@ -66,7 +66,7 @@
     pdf: "https://arxiv.org/pdf/2412.02193"
     code: "https://github.com/sunfanyunn/LayoutVLM"
     project: "https://ai.stanford.edu/~sunfanyun/layoutvlm/"
-  tags: ["3d-layout", "spatial-planning", "differentiable-optimization", "vision-language-model"]
+  tags: ["3d-layout", "spatial-planning", "differentiable-optimization", "vision-language-model", "weakly-related"]
 
 - key: li2024embodied_agent_interface
   title: "Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making"
@@ -80,7 +80,7 @@
     pdf: "https://arxiv.org/pdf/2410.07166"
     code: "https://github.com/embodied-agent-interface/embodied-agent-interface"
     project: "https://embodied-agent-interface.github.io/"
-  tags: ["benchmark", "ability-taxonomy", "goal-interpretation", "action-sequencing", "transition-modeling"]
+  tags: ["benchmark", "ability-taxonomy", "goal-interpretation", "action-sequencing", "transition-modeling", "weakly-related"]
 
 - key: agarwal2026origamibench
   title: "OrigamiBench: An Interactive Environment to Synthesize Flat-Foldable Origamis"
@@ -100,7 +100,7 @@
   title: "MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs"
   year: 2026
   venue: "arXiv"
-  domain: ["Order", "Temporal Reasoning", "Planning"]
+  domain: ["Temporal Reasoning", "Planning"]
   objects: ["instruction steps", "recipes", "temporal execution graphs"]
   observations: ["images", "text instructions", "step sequences"]
   links:
@@ -108,7 +108,7 @@
     pdf: "https://arxiv.org/pdf/2602.14589"
     code: ""
     project: ""
-  tags: ["benchmark", "temporal-execution-order", "planning", "multimodal-reasoning", "order"]
+  tags: ["benchmark", "temporal-execution-order", "planning", "multimodal-reasoning", "weakly-related"]
 
 - key: xu2025origamispace
   title: "ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints"
@@ -142,7 +142,7 @@
   title: "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models"
   year: 2025
   venue: "ICLR"
-  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  domain: ["Temporal Reasoning", "Video Understanding"]
   objects: ["videos", "actions", "motion patterns"]
   observations: ["video frames", "temporal QA"]
   links:
@@ -150,13 +150,13 @@
     pdf: "https://arxiv.org/pdf/2410.23266"
     code: "https://github.com/yale-nlp/TOMATO"
     project: "https://huggingface.co/datasets/yale-nlp/TOMATO"
-  tags: ["benchmark", "video", "frame-order-sensitivity", "temporal-reasoning", "order"]
+  tags: ["benchmark", "video", "frame-order-sensitivity", "temporal-reasoning", "weakly-related"]
 
 - key: cai2024temporalbench
   title: "TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models"
   year: 2024
   venue: "arXiv"
-  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  domain: ["Temporal Reasoning", "Video Understanding"]
   objects: ["videos", "actions", "events", "motion"]
   observations: ["video clips", "question-answer pairs", "temporal annotations"]
   links:
@@ -164,13 +164,13 @@
     pdf: "https://arxiv.org/pdf/2410.10818"
     code: "https://github.com/mu-cai/TemporalBench"
     project: "https://temporalbench.github.io/"
-  tags: ["benchmark", "video", "event-order", "fine-grained-temporal-understanding", "order"]
+  tags: ["benchmark", "video", "event-order", "fine-grained-temporal-understanding", "weakly-related"]
 
 - key: li2024mvbench
   title: "MVBench: A Comprehensive Multi-modal Video Understanding Benchmark"
   year: 2024
   venue: "CVPR"
-  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  domain: ["Temporal Reasoning", "Video Understanding"]
   objects: ["videos", "actions", "state changes"]
   observations: ["video clips", "multiple-choice QA"]
   links:
@@ -178,7 +178,7 @@
     pdf: "https://arxiv.org/pdf/2311.17005"
     code: "https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2"
     project: ""
-  tags: ["benchmark", "video", "action-sequence", "state-change", "temporal-reasoning"]
+  tags: ["benchmark", "video", "action-sequence", "state-change", "temporal-reasoning", "weakly-related"]
 
 - key: shridhar2021cliport
   title: "CLIPort: What and Where Pathways for Robotic Manipulation"
@@ -212,7 +212,7 @@
   title: "CLEVRER: CoLlision Events for Video REpresentation and Reasoning"
   year: 2020
   venue: "ICLR"
-  domain: ["Order", "Temporal Reasoning", "Physical Reasoning"]
+  domain: ["Temporal Reasoning", "Physical Reasoning"]
   objects: ["moving objects", "collisions", "events"]
   observations: ["videos", "event histories", "question-answer pairs"]
   links:
@@ -220,13 +220,13 @@
     pdf: "https://arxiv.org/pdf/1910.01442"
     code: "https://github.com/chuangg/CLEVRER"
     project: "http://clevrer.csail.mit.edu/"
-  tags: ["benchmark", "video", "causal-reasoning", "event-order", "physical-reasoning"]
+  tags: ["benchmark", "video", "causal-reasoning", "event-order", "physical-reasoning", "weakly-related"]
 
 - key: groth2018shapestacks
   title: "ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking"
   year: 2018
   venue: "ECCV"
-  domain: ["Order", "Physical Reasoning"]
+  domain: ["Physical Reasoning"]
   objects: ["3D primitives", "block towers", "object stacks"]
   observations: ["rendered images", "stability labels", "stack configurations"]
   links:
@@ -234,13 +234,13 @@
     pdf: "https://arxiv.org/pdf/1804.08018"
     code: "https://github.com/ogroth/shapestacks"
     project: "http://shapestacks.robots.ox.ac.uk/"
-  tags: ["dataset", "stacking", "stability", "block-towers", "order"]
+  tags: ["dataset", "stacking", "stability", "block-towers", "weakly-related"]
 
 - key: chen2025knotgym
   title: "Knot So Simple: A Minimalistic Environment for Spatial Reasoning"
   year: 2025
   venue: "arXiv"
-  domain: ["Entanglement"]
+  domain: ["Knots"]
   objects: ["rope"]
   observations: ["image"]
   links:
@@ -254,7 +254,7 @@
   title: "AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents"
   year: 2024
   venue: "arXiv"
-  domain: ["Connectivity"]
+  domain: ["Continuity"]
   objects: ["maze", "agent"]
   observations: ["vision"]
   links:
@@ -268,7 +268,7 @@
   title: "AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO"
   year: 2025
   venue: "arXiv"
-  domain: ["Connectivity"]
+  domain: ["Continuity"]
   objects: ["maze", "agent"]
   observations: ["tokenized-maze"]
   links:

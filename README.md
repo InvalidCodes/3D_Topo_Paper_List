@@ -1,7 +1,7 @@
 # Awesome 3D Topo Benchmark (Related Papers)
 
 This repo curates papers, datasets, and benchmarks for evaluating **3D / topological structure reasoning** in **vision-language(-action) models and embodied agents**.  
-We focus on topology-flavored capabilities such as continuity, separation, order, enclosure, holes, and knot/entanglement reasoning.
+We focus on topology-flavored capabilities such as continuity, separation, order, enclosure, holes, and knot reasoning.
 Contributions are very welcome — please feel free to open an issue or submit a PR.
 
 ## Table of Contents
@@ -16,8 +16,7 @@ Contributions are very welcome — please feel free to open an issue or submit a
   - [Separation](#separation)
   - [Order](#order)
   - [Enclosure](#enclosure)
-  - [Holes](#holes)
-  - [Knot / Entanglement](#knot--entanglement)
+  - [Knots](#knots)
 - [Model Diagnostics](#model-diagnostics)
 - [Tools / Environments](#tools--environments)
 - [Others](#others)
@@ -57,14 +56,13 @@ Papers that justify the taxonomy or define the topological concepts used by the 
 
 Papers, datasets, and environments that can directly inspire benchmark items or baselines.
 
-| Ability | Static Perception | Temporal Consistency | Intervention / Planning |
-|---|---|---|---|
-| Continuity | Maze reachability, Möbius continuity, connected components | Object/path continuity across views or frames | Pipe connection, route planning |
-| Separation | Shape/object separation, disjoint components | Maintaining separated objects under motion | One-stroke color grouping, partition actions |
-| Order | Origami state order, beam-string spatial order, stacking order | Recovering action/order sequence from video | Hanoi Tower, reordering tasks |
-| Enclosure | Inside/outside, closed boundary, hole detection, nested containers | Containment persistence under viewpoint or object motion | Laser game, containment manipulation |
-| Holes | Hole/tunnel/cavity detection, genus or Euler-characteristic checks, CAD hole features | Hole preservation under view, deformation, reconstruction, or generation | Peg-in-hole insertion, topology-preserving CAD/mesh editing |
-| Knot | Closed loop vs. open rope, knot/link detection, chain count | Knot state consistency across deformation | Rope untangling, link manipulation |
+| Category | Perception (static) | Planning (interactive) |
+|---|---|---|
+| Continuity | 2D Maze (`continuity_2d_maze`), 3D Maze (`continuity_3d_maze`) | Pipe (`continuity_pipe`) |
+| Separation | IKEA (`separation_objects`) | One Stroke (`separation_one_stroke`) |
+| Order | Bead (`order_bead_string`), Origami Point (`order_origami`) | Swap (`order_swap_puzzle`) |
+| Enclosure | Sheep (`enclosure_sheep`), Hole (`enclosure_hole_detection`) | Chat noir (`enclosure_chat_noir`) |
+| Knots | Knots (`knots_static`) | Untangle (`knots_untangle`, easy / medium / hard) |
 
 ### Cross-Ability / Spatial Taxonomy
 
@@ -74,27 +72,19 @@ Papers, datasets, and environments that can directly inspire benchmark items or 
 | [Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration? (ICLR 2026)](https://arxiv.org/abs/2602.07055) | ![Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration? (ICLR 2026)](imgs/theory_of_space_can_foundation_models_construct_spatial_beliefs_thro.png) | 2026-02 | [Github](https://github.com/mll-lab-nu/Theory-of-Space) |
 | [Thinking in Structures: Evaluating Spatial Intelligence through Reasoning on Constrained Manifolds](https://arxiv.org/abs/2602.07864) | ![Thinking in Structures: Evaluating Spatial Intelligence through Reasoning on Constrained Manifolds](imgs/thinking_in_structures_evaluating_spatial_intelligence_through_reaso.png) | 2026-02 | [Project](https://ssi-bench.github.io/) |
 | [OmniSpatial: Towards Comprehensive Spatial Reasoning Benchmark for Vision Language Models (ICLR 2026)](https://openreview.net/forum?id=6nZKT2rL0H) | ![OmniSpatial benchmark overview.](imgs/omnispatial.png) <!-- Large-scale VLM benchmark with dynamic reasoning, complex spatial logic, spatial interaction, perspective-taking, containment, and inside/outside-style spatial relation tasks. --> | 2026-01 | [Github](https://github.com/qizekun/omnispatial) |
-| [ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction (ICLR 2026)](https://arxiv.org/abs/2511.20937) | ![ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction (ICLR 2026)](imgs/enact_evaluating_embodied_cognition_with_world_modeling_of_egocentri.png) | 2025-11 | [Github](https://github.com/mll-lab-nu/ENACT) |
 | [SPATIAL-DISE: A Unified Benchmark for Evaluating Spatial Reasoning in Vision-Language Models](https://arxiv.org/pdf/2510.13394) | ![Unified diagnostic benchmark for spatial reasoning tasks.](imgs/spatial_dise_vlm.png) | 2025-10 | [Dataset](https://huggingface.co/datasets/TACPS-liv/Spatial-DISE) |
 | [SITE: towards Spatial Intelligence Thorough Evaluation (ICCV 2025)](https://openaccess.thecvf.com/content/ICCV2025/html/Wang_SITE_towards_Spatial_Intelligence_Thorough_Evaluation_ICCV_2025_paper.html) | ![SITE: towards Spatial Intelligence Thorough Evaluation (ICCV 2025)](imgs/site_towards_spatial_intelligence_thorough_evaluation.png) | 2025-10 | — |
 | [3DSRBench: A Comprehensive 3D Spatial Reasoning Benchmark (ICCV 2025)](https://3dsrbench.github.io/) | ![3DSRBench: A Comprehensive 3D Spatial Reasoning Benchmark (ICCV 2025)](imgs/3dsrbench_a_comprehensive_3d_spatial_reasoning_benchmark.png) | 2025-10 | [Project](https://3dsrbench.github.io/) |
 | [Can Multimodal Large Language Models Understand Spatial Relations? (ACL 2025)](https://aclanthology.org/2025.acl-long.31/) | ![Can Multimodal Large Language Models Understand Spatial Relations? (ACL 2025)](imgs/can_multimodal_large_language_models_understand_spatial_relations.png) | 2025-07 | [Dataset](https://huggingface.co/datasets/liuziyan/SpatialMQA) |
 | [MindCube: Spatial Mental Modeling from Limited Views (ICLR 2026)](https://arxiv.org/abs/2506.21458) | ![MindCube: Spatial Mental Modeling from Limited Views (ICLR 2026)](imgs/mindcube_spatial_mental_modeling_from_limited_views.png) | 2025-06 | [Github](https://github.com/mll-lab-nu/MindCube) |
 | [Mind the Gap: Benchmarking Spatial Reasoning in Vision-Language Models](https://arxiv.org/abs/2503.19707) | ![Benchmarking spatial reasoning in VLMs across synthetic and real images.](imgs/mind_gap_spatial_reasoning_vlm.png) | 2025-03 | [Github](https://github.com/stogiannidis/srbench) |
-| [Open3D-VQA: A Benchmark for Comprehensive Spatial Reasoning with Multimodal Large Language Model in Open Space](https://arxiv.org/abs/2503.11094) | ![Open3D-VQA: aerial/open-space spatial reasoning benchmark.](imgs/open3d_mllm.png) | 2025-03 | [Github](https://github.com/EmbodiedCity/Open3D-VQA.code) |
 | [RoboSpatial: Teaching Spatial Understanding to 2D and 3D Vision-Language Models for Robotics](https://openreview.net/forum?id=Sextl6R3Nf) | ![RoboSpatial: Teaching Spatial Understanding to 2D and 3D Vision-Language Models for Robotics](imgs/robospatial_teaching_spatial_understanding_to_2d_and_3d_vision_langu.png) | 2025-02 | — |
-| [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents (ICML 2025)](https://arxiv.org/abs/2502.09560) | ![EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents (ICML 2025)](imgs/embodiedbench_comprehensive_benchmarking_multi_modal_large_language.png) | 2025-02 | [Github](https://github.com/EmbodiedBench/EmbodiedBench) |
-| [LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models (CVPR 2025)](https://arxiv.org/abs/2412.02193) | ![LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models (CVPR 2025)](imgs/layoutvlm_differentiable_optimization_of_3d_layout_via_vision_langua.png) | 2024-12 | [Github](https://github.com/sunfanyunn/LayoutVLM) |
-| [Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making (NeurIPS 2024 D&B)](https://arxiv.org/abs/2410.07166) | ![Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making (NeurIPS 2024 D&B)](imgs/embodied_agent_interface_benchmarking_llms_for_embodied_decision_mak.png) | 2024-10 | [Github](https://github.com/embodied-agent-interface/embodied-agent-interface) |
-| [ScanQA: 3D Question Answering for Spatial Scene Understanding](https://arxiv.org/abs/2112.10482) | ![3D question answering with object-grounded answers and 3D bounding boxes.](imgs/scan3d_vlm.png) | 2021-12 | [Github](https://github.com/ATR-DBI/ScanQA) |
 
 ### Continuity
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| [TDBench: Benchmarking Vision-Language Models in Understanding Top-Down Images](https://arxiv.org/abs/2504.03748) | ![Benchmarking VLMs on top-down imagery.](imgs/tdbench_vlm.png) | 2025-04 | — |
 | [AlphaMaze: Enhancing Large Language Models' Spatial Intelligence via GRPO](https://arxiv.org/abs/2502.14669) | ![AlphaMaze](imgs/alpha_maze.png) | 2025-02 | — |
-| [Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces](https://arxiv.org/abs/2412.14171) | ![Video-based visual-spatial intelligence benchmark (VSI-Bench).](imgs/space_mllm.png) | 2024-12 | [Github](https://github.com/vision-x-nyu/thinking-in-space) |
 | [AMaze: An intuitive benchmark generator for fast prototyping of generalizable agents](https://arxiv.org/abs/2411.13072) | ![Procedural maze generator to study generalization under deceptive cues.](imgs/amaze.png) | 2024-11 | — |
 | [Topological Planning with Transformers for Vision-and-Language Navigation (CVPR 2021)](https://arxiv.org/abs/2012.05292) | ![Predicts interpretable navigation plans on topological maps from language instructions.](imgs/topo_plannning_vln.png) | 2021 | — |
 
@@ -110,16 +100,10 @@ Papers, datasets, and environments that can directly inspire benchmark items or 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
 | [OrigamiBench: An Interactive Environment to Synthesize Flat-Foldable Origamis](https://arxiv.org/abs/2603.13856) | ![OrigamiBench: An Interactive Environment to Synthesize Flat-Foldable Origamis](imgs/origamibench_an_interactive_environment_to_synthesize_flat_foldable.png) | 2026-03 | — |
-| [MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs](https://arxiv.org/abs/2602.14589) | ![MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs](imgs/mateo_a_multimodal_benchmark_for_temporal_reasoning_and_planning_in.png) | 2026-02 | — |
 | [ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints (NeurIPS 2025 Spotlight)](https://openreview.net/forum?id=y7ahj9RoXQ) | ![ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints (NeurIPS 2025 Spotlight)](imgs/origamispace_benchmarking_multimodal_llms_in_multi_step_spatial_reas.png) | 2025-09 | — |
 | [GamiBench: Evaluating Spatial Reasoning and 2D-to-3D Planning Capabilities of MLLMs with Origami Folding Tasks](https://arxiv.org/abs/2512.22207) | ![GamiBench: Evaluating Spatial Reasoning and 2D-to-3D Planning Capabilities of MLLMs with Origami Folding Tasks](imgs/gamibench_evaluating_spatial_reasoning_and_2d_to_3d_planning_capabil.png) | 2025-12 | [Github](https://github.com/stvngo/GamiBench) |
-| [TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models (ICLR 2025)](https://arxiv.org/abs/2410.23266) | ![TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models (ICLR 2025)](imgs/tomato_assessing_visual_temporal_reasoning_capabilities_in_multimoda.png) | 2025 | [Github](https://github.com/yale-nlp/TOMATO) |
-| [TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models](https://arxiv.org/abs/2410.10818) | ![TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models](imgs/temporalbench_benchmarking_fine_grained_temporal_understanding_for_m.png) | 2024-10 | [Github](https://github.com/mu-cai/TemporalBench) |
-| [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark (CVPR 2024)](https://arxiv.org/abs/2311.17005) | ![MVBench: A Comprehensive Multi-modal Video Understanding Benchmark (CVPR 2024)](imgs/mvbench_a_comprehensive_multi_modal_video_understanding_benchmark.png) | 2024 | [Github](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |
 | [CLIPort: What and Where Pathways for Robotic Manipulation (CoRL 2021)](https://arxiv.org/abs/2109.12098) | ![CLIPort: What and Where Pathways for Robotic Manipulation (CoRL 2021)](imgs/cliport_what_and_where_pathways_for_robotic_manipulation.png) | 2021 | [Github](https://github.com/cliport/cliport) |
 | [Transporter Networks: Rearranging the Visual World for Robotic Manipulation (CoRL 2020)](https://arxiv.org/abs/2010.14406) | ![Transporter Networks: Rearranging the Visual World for Robotic Manipulation (CoRL 2020)](imgs/transporter_networks_rearranging_the_visual_world_for_robotic_manipu.png) | 2020 | [Github](https://github.com/google-research/ravens) |
-| [CLEVRER: CoLlision Events for Video REpresentation and Reasoning (ICLR 2020)](https://arxiv.org/abs/1910.01442) | ![CLEVRER: CoLlision Events for Video REpresentation and Reasoning (ICLR 2020)](imgs/clevrer_collision_events_for_video_representation_and_reasoning.png) | 2020 | [Github](https://github.com/chuangg/CLEVRER) |
-| [ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking (ECCV 2018)](https://arxiv.org/abs/1804.08018) | ![ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking (ECCV 2018)](imgs/shapestacks_learning_vision_based_physical_intuition_for_generalised.png) | 2018 | [Github](https://github.com/ogroth/shapestacks) |
 
 ### Enclosure
 
@@ -127,18 +111,11 @@ Papers, datasets, and environments that can directly inspire benchmark items or 
 |---|---|---:|:---:|
 | [Visual Spatial Reasoning](https://aclanthology.org/2023.tacl-1.37/) | ![Visual Spatial Reasoning](imgs/visual_spatial_reasoning.png) | 2023 | [Dataset](https://huggingface.co/datasets/cambridgeltl/vsr_random) |
 | [Rel3D: A Minimally Contrastive Benchmark for Grounding Spatial Relations in 3D (NeurIPS 2020)](https://proceedings.neurips.cc/paper/2020/file/76dc611d6ebaafc66cc0879c71b5db5c-Paper.pdf) | ![Rel3D: A Minimally Contrastive Benchmark for Grounding Spatial Relations in 3D (NeurIPS 2020)](imgs/rel3d_a_minimally_contrastive_benchmark_for_grounding_spatial_relati.png) | 2020 | [Github](https://github.com/princeton-vl/Rel3D) |
-
-### Holes
-
-| Title | Introduction | Date | Code |
-|---|---|---:|:---:|
-| [EvoCAD: Evolutionary CAD Code Generation with Vision Language Models](https://arxiv.org/abs/2510.11631) | ![EvoCAD: Evolutionary CAD Code Generation with Vision Language Models](imgs/evocad_evolutionary_cad_code_generation_with_vision_language_models.png) | 2025-10 | — |
-| [VideoCAD: A Large-Scale Video Dataset for Learning UI Interactions and 3D Reasoning from CAD Software](https://arxiv.org/abs/2505.24838) | ![VideoCAD: A Large-Scale Video Dataset for Learning UI Interactions and 3D Reasoning from CAD Software](imgs/videocad_a_large_scale_video_dataset_for_learning_ui_interactions_an.png) | 2025-05 | [Github](https://github.com/BrandonMan123/VideoCAD) |
 | [Zero-Shot Peg Insertion: Identifying Mating Holes and Estimating SE(2) Poses with Vision-Language Models](https://arxiv.org/abs/2503.06026) | ![Zero-Shot Peg Insertion: Identifying Mating Holes and Estimating SE(2) Poses with Vision-Language Models](imgs/zero_shot_peg_insertion_identifying_mating_holes_and_estimating_se_p.png) | 2025-03 | — |
 | [Euler Characteristic Transform Based Topological Loss for Reconstructing 3D Images From Single 2D Slices (CVPRW 2023)](https://openaccess.thecvf.com/CVPR2023_workshops/TAG-PRA) | ![Euler Characteristic Transform Based Topological Loss for Reconstructing 3D Images From Single 2D Slices (CVPRW 2023)](imgs/euler_characteristic_transform_based_topological_loss_for_reconstruc.png) | 2023-06 | — |
 | [BRepNet: A Topological Message Passing System for Solid Models (CVPR 2021)](https://openaccess.thecvf.com/content/CVPR2021/html/Lambourne_BRepNet_A_Topological_Message_Passing_System_for_Solid_Models_CVPR_2021_paper.html) | ![BRepNet: A Topological Message Passing System for Solid Models (CVPR 2021)](imgs/brepnet_a_topological_message_passing_system_for_solid_models.png) | 2021 | [Github](https://github.com/AutodeskAILab/BRepNet) |
 
-### Knot / Entanglement
+### Knots
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
@@ -178,8 +155,23 @@ Implementation references used to build, render, or operationalize benchmark tas
 
 ## Others
 
-Relevant papers that provide adjacent motivation but do not directly define the taxonomy, produce benchmark tasks, diagnose models, or support implementation.
+Relevant papers that provide adjacent motivation but do not directly define the taxonomy, produce benchmark tasks, diagnose models, or support implementation. These are kept out of the core ability sections because their current task mapping is weak or indirect.
 
 | Title | Introduction | Date | Code |
 |---|---|---:|:---:|
-| TBD | TBD | — | — |
+| [ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction (ICLR 2026)](https://arxiv.org/abs/2511.20937) | ![ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction (ICLR 2026)](imgs/enact_evaluating_embodied_cognition_with_world_modeling_of_egocentri.png) <!-- Broad embodied world-modeling benchmark; useful background, but not topology-specific. --> | 2025-11 | [Github](https://github.com/mll-lab-nu/ENACT) |
+| [MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs](https://arxiv.org/abs/2602.14589) | ![MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs](imgs/mateo_a_multimodal_benchmark_for_temporal_reasoning_and_planning_in.png) <!-- Temporal reasoning/planning without an explicit topology task family. --> | 2026-02 | — |
+| [EvoCAD: Evolutionary CAD Code Generation with Vision Language Models](https://arxiv.org/abs/2510.11631) | ![EvoCAD: Evolutionary CAD Code Generation with Vision Language Models](imgs/evocad_evolutionary_cad_code_generation_with_vision_language_models.png) <!-- CAD generation is adjacent to holes/enclosure, but this entry is not specifically about hole detection or topology preservation. --> | 2025-10 | — |
+| [VideoCAD: A Large-Scale Video Dataset for Learning UI Interactions and 3D Reasoning from CAD Software](https://arxiv.org/abs/2505.24838) | ![VideoCAD: A Large-Scale Video Dataset for Learning UI Interactions and 3D Reasoning from CAD Software](imgs/videocad_a_large_scale_video_dataset_for_learning_ui_interactions_an.png) <!-- CAD software interaction dataset; weak direct relation to the topology taxonomy. --> | 2025-05 | [Github](https://github.com/BrandonMan123/VideoCAD) |
+| [Open3D-VQA: A Benchmark for Comprehensive Spatial Reasoning with Multimodal Large Language Model in Open Space](https://arxiv.org/abs/2503.11094) | ![Open3D-VQA: aerial/open-space spatial reasoning benchmark.](imgs/open3d_mllm.png) <!-- General 3D spatial QA, with weak direct coverage of the topology taxonomy. --> | 2025-03 | [Github](https://github.com/EmbodiedCity/Open3D-VQA.code) |
+| [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents (ICML 2025)](https://arxiv.org/abs/2502.09560) | ![EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents (ICML 2025)](imgs/embodiedbench_comprehensive_benchmarking_multi_modal_large_language.png) <!-- Broad embodied-agent benchmark; useful adjacent context, but not a topology benchmark. --> | 2025-02 | [Github](https://github.com/EmbodiedBench/EmbodiedBench) |
+| [LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models (CVPR 2025)](https://arxiv.org/abs/2412.02193) | ![LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models (CVPR 2025)](imgs/layoutvlm_differentiable_optimization_of_3d_layout_via_vision_langua.png) <!-- Focuses on 3D layout constraints rather than topological invariants. --> | 2024-12 | [Github](https://github.com/sunfanyunn/LayoutVLM) |
+| [Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making (NeurIPS 2024 D&B)](https://arxiv.org/abs/2410.07166) | ![Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making (NeurIPS 2024 D&B)](imgs/embodied_agent_interface_benchmarking_llms_for_embodied_decision_mak.png) <!-- Decision-making benchmark; only indirectly related to topology. --> | 2024-10 | [Github](https://github.com/embodied-agent-interface/embodied-agent-interface) |
+| [Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces](https://arxiv.org/abs/2412.14171) | ![Video-based visual-spatial intelligence benchmark (VSI-Bench).](imgs/space_mllm.png) <!-- Broad visual-spatial benchmark; weak direct mapping to topology tasks. --> | 2024-12 | [Github](https://github.com/vision-x-nyu/thinking-in-space) |
+| [TDBench: Benchmarking Vision-Language Models in Understanding Top-Down Images](https://arxiv.org/abs/2504.03748) | ![Benchmarking VLMs on top-down imagery.](imgs/tdbench_vlm.png) <!-- Top-down spatial recognition is adjacent, but this entry does not isolate continuity. --> | 2025-04 | — |
+| [TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models (ICLR 2025)](https://arxiv.org/abs/2410.23266) | ![TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models (ICLR 2025)](imgs/tomato_assessing_visual_temporal_reasoning_capabilities_in_multimoda.png) <!-- General temporal video reasoning; not topology-specific. --> | 2025 | [Github](https://github.com/yale-nlp/TOMATO) |
+| [TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models](https://arxiv.org/abs/2410.10818) | ![TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models](imgs/temporalbench_benchmarking_fine_grained_temporal_understanding_for_m.png) <!-- General temporal understanding benchmark; weak topology connection. --> | 2024-10 | [Github](https://github.com/mu-cai/TemporalBench) |
+| [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark (CVPR 2024)](https://arxiv.org/abs/2311.17005) | ![MVBench: A Comprehensive Multi-modal Video Understanding Benchmark (CVPR 2024)](imgs/mvbench_a_comprehensive_multi_modal_video_understanding_benchmark.png) <!-- Broad video understanding benchmark; too general for the taxonomy. --> | 2024 | [Github](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |
+| [CLEVRER: CoLlision Events for Video REpresentation and Reasoning (ICLR 2020)](https://arxiv.org/abs/1910.01442) | ![CLEVRER: CoLlision Events for Video REpresentation and Reasoning (ICLR 2020)](imgs/clevrer_collision_events_for_video_representation_and_reasoning.png) <!-- Causal/physical event reasoning, not a topological-reasoning benchmark. --> | 2020 | [Github](https://github.com/chuangg/CLEVRER) |
+| [ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking (ECCV 2018)](https://arxiv.org/abs/1804.08018) | ![ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking (ECCV 2018)](imgs/shapestacks_learning_vision_based_physical_intuition_for_generalised.png) <!-- Stacking/stability is adjacent to order but does not directly test the proposed order tasks. --> | 2018 | [Github](https://github.com/ogroth/shapestacks) |
+| [ScanQA: 3D Question Answering for Spatial Scene Understanding](https://arxiv.org/abs/2112.10482) | ![3D question answering with object-grounded answers and 3D bounding boxes.](imgs/scan3d_vlm.png) <!-- General 3D scene QA; not topology-specific. --> | 2021-12 | [Github](https://github.com/ATR-DBI/ScanQA) |
