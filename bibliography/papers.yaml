@@ -82,6 +82,160 @@
     project: "https://embodied-agent-interface.github.io/"
   tags: ["benchmark", "ability-taxonomy", "goal-interpretation", "action-sequencing", "transition-modeling"]
 
+- key: agarwal2026origamibench
+  title: "OrigamiBench: An Interactive Environment to Synthesize Flat-Foldable Origamis"
+  year: 2026
+  venue: "arXiv"
+  domain: ["Order", "Spatial Reasoning", "Planning"]
+  objects: ["origami crease patterns", "folded shapes", "fold actions"]
+  observations: ["visual states", "fold histories", "target configurations"]
+  links:
+    paper: "https://arxiv.org/abs/2603.13856"
+    pdf: "https://arxiv.org/pdf/2603.13856"
+    code: ""
+    project: ""
+  tags: ["benchmark", "origami", "sequential-planning", "folding", "order"]
+
+- key: roccabruna2026mateo
+  title: "MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs"
+  year: 2026
+  venue: "arXiv"
+  domain: ["Order", "Temporal Reasoning", "Planning"]
+  objects: ["instruction steps", "recipes", "temporal execution graphs"]
+  observations: ["images", "text instructions", "step sequences"]
+  links:
+    paper: "https://arxiv.org/abs/2602.14589"
+    pdf: "https://arxiv.org/pdf/2602.14589"
+    code: ""
+    project: ""
+  tags: ["benchmark", "temporal-execution-order", "planning", "multimodal-reasoning", "order"]
+
+- key: xu2025origamispace
+  title: "ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints"
+  year: 2025
+  venue: "NeurIPS Spotlight"
+  domain: ["Order", "Spatial Reasoning"]
+  objects: ["origami crease patterns", "folding processes", "folded shapes"]
+  observations: ["CP diagrams", "compiled flat patterns", "folding process diagrams", "final folded-shape images"]
+  links:
+    paper: "https://openreview.net/forum?id=y7ahj9RoXQ"
+    pdf: "https://openreview.net/pdf?id=y7ahj9RoXQ"
+    code: ""
+    project: ""
+  tags: ["benchmark", "origami", "multi-step-reasoning", "spatial-relationship", "order"]
+
+- key: spencer2025gamibench
+  title: "GamiBench: Evaluating Spatial Reasoning and 2D-to-3D Planning Capabilities of MLLMs with Origami Folding Tasks"
+  year: 2025
+  venue: "arXiv"
+  domain: ["Order", "Spatial Reasoning"]
+  objects: ["origami crease patterns", "3D folded shapes", "viewpoints"]
+  observations: ["2D crease patterns", "3D fold configurations", "multi-view images"]
+  links:
+    paper: "https://arxiv.org/abs/2512.22207"
+    pdf: "https://arxiv.org/pdf/2512.22207"
+    code: "https://github.com/stvngo/GamiBench"
+    project: "https://huggingface.co/datasets/stvngo/GamiBench"
+  tags: ["benchmark", "origami", "2d-to-3d", "viewpoint-consistency", "order"]
+
+- key: shangguan2025tomato
+  title: "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models"
+  year: 2025
+  venue: "ICLR"
+  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  objects: ["videos", "actions", "motion patterns"]
+  observations: ["video frames", "temporal QA"]
+  links:
+    paper: "https://arxiv.org/abs/2410.23266"
+    pdf: "https://arxiv.org/pdf/2410.23266"
+    code: "https://github.com/yale-nlp/TOMATO"
+    project: "https://huggingface.co/datasets/yale-nlp/TOMATO"
+  tags: ["benchmark", "video", "frame-order-sensitivity", "temporal-reasoning", "order"]
+
+- key: cai2024temporalbench
+  title: "TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models"
+  year: 2024
+  venue: "arXiv"
+  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  objects: ["videos", "actions", "events", "motion"]
+  observations: ["video clips", "question-answer pairs", "temporal annotations"]
+  links:
+    paper: "https://arxiv.org/abs/2410.10818"
+    pdf: "https://arxiv.org/pdf/2410.10818"
+    code: "https://github.com/mu-cai/TemporalBench"
+    project: "https://temporalbench.github.io/"
+  tags: ["benchmark", "video", "event-order", "fine-grained-temporal-understanding", "order"]
+
+- key: li2024mvbench
+  title: "MVBench: A Comprehensive Multi-modal Video Understanding Benchmark"
+  year: 2024
+  venue: "CVPR"
+  domain: ["Order", "Temporal Reasoning", "Video Understanding"]
+  objects: ["videos", "actions", "state changes"]
+  observations: ["video clips", "multiple-choice QA"]
+  links:
+    paper: "https://arxiv.org/abs/2311.17005"
+    pdf: "https://arxiv.org/pdf/2311.17005"
+    code: "https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2"
+    project: ""
+  tags: ["benchmark", "video", "action-sequence", "state-change", "temporal-reasoning"]
+
+- key: shridhar2021cliport
+  title: "CLIPort: What and Where Pathways for Robotic Manipulation"
+  year: 2021
+  venue: "CoRL"
+  domain: ["Order", "Robotic Manipulation"]
+  objects: ["tabletop objects", "blocks", "cloth", "Hanoi disks"]
+  observations: ["RGB-D", "language goals", "pick-and-place actions"]
+  links:
+    paper: "https://arxiv.org/abs/2109.12098"
+    pdf: "https://arxiv.org/pdf/2109.12098"
+    code: "https://github.com/cliport/cliport"
+    project: "https://cliport.github.io/"
+  tags: ["robotics", "rearrangement", "language-conditioned-manipulation", "stacking", "order"]
+
+- key: zeng2020transporter
+  title: "Transporter Networks: Rearranging the Visual World for Robotic Manipulation"
+  year: 2020
+  venue: "CoRL"
+  domain: ["Order", "Robotic Manipulation"]
+  objects: ["tabletop objects", "blocks", "Hanoi disks", "ropes"]
+  observations: ["RGB-D", "pick-and-place actions"]
+  links:
+    paper: "https://arxiv.org/abs/2010.14406"
+    pdf: "https://arxiv.org/pdf/2010.14406"
+    code: "https://github.com/google-research/ravens"
+    project: "https://transporternets.github.io/"
+  tags: ["robotics", "ravens", "rearrangement", "towers-of-hanoi", "stacking", "order"]
+
+- key: yi2020clevrer
+  title: "CLEVRER: CoLlision Events for Video REpresentation and Reasoning"
+  year: 2020
+  venue: "ICLR"
+  domain: ["Order", "Temporal Reasoning", "Physical Reasoning"]
+  objects: ["moving objects", "collisions", "events"]
+  observations: ["videos", "event histories", "question-answer pairs"]
+  links:
+    paper: "https://arxiv.org/abs/1910.01442"
+    pdf: "https://arxiv.org/pdf/1910.01442"
+    code: "https://github.com/chuangg/CLEVRER"
+    project: "http://clevrer.csail.mit.edu/"
+  tags: ["benchmark", "video", "causal-reasoning", "event-order", "physical-reasoning"]
+
+- key: groth2018shapestacks
+  title: "ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking"
+  year: 2018
+  venue: "ECCV"
+  domain: ["Order", "Physical Reasoning"]
+  objects: ["3D primitives", "block towers", "object stacks"]
+  observations: ["rendered images", "stability labels", "stack configurations"]
+  links:
+    paper: "https://arxiv.org/abs/1804.08018"
+    pdf: "https://arxiv.org/pdf/1804.08018"
+    code: "https://github.com/ogroth/shapestacks"
+    project: "http://shapestacks.robots.ox.ac.uk/"
+  tags: ["dataset", "stacking", "stability", "block-towers", "order"]
+
 - key: chen2025knotgym
   title: "Knot So Simple: A Minimalistic Environment for Spatial Reasoning"
   year: 2025
